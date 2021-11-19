@@ -1,0 +1,107 @@
+
+*{
+    margin: 0 auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+
+}
+header{
+    color: #F9FFFD;;
+    background-color: #0F384B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    font-size: 41px;
+    margin-top: 0;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 100vh;
+    background-color:#F9FFFD;
+    
+}
+
+.memory-game{
+  
+    width: 1020px;
+    height: 640px;
+    margin-top: 20px;
+    perspective: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    position: relative;
+    cursor:pointer;
+    transform: scale(1);
+    transform-style: preserve-3d; /* / não deixa o elemento achatado no plano */
+    transition: transform .9s;
+}
+.card:active{
+    transform: scale(0.90);
+    transition: transform .3s;
+}
+.back-card,  .front-card{
+    background-color: #F9FFFD;;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    border: 5px ridge #0F384B;
+    backface-visibility: hidden;  /* retira o verso do elemento, permitindo ver o verso da carta */
+
+}
+.fas{
+    text-align: center;
+    font-size: 125px;
+    color: #F25F35;
+}
+.front-card{
+    transform: rotateY(180deg); /* animação de rotação e 180 graus */
+}
+.card.flip{
+    transform: rotateY(180deg);
+}
+
+
+footer {
+    width: 100%;
+    background-color:#0F384B;
+    margin-top: 50px;
+    position: relative;
+}
+.divicons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    margin-top: 10px;
+
+}
+.icons{
+    font-size: 21px;
+    color: white;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+    margin-left: 20px;
+    font-size: 21px;
+    
+
+}
