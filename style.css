@@ -35,7 +35,7 @@ body
     height: 100vh;
     margin-right: 10%;
     background-color: #0F384B;
-    color: #F25F35;
+    color: #F9FFFD;
 }
 .container3
 {
@@ -64,10 +64,12 @@ h1
     padding: 30px;
     font-size: 34px;
     font-weight: bolder;
+    color: #F25F35;
 }
 h2
 {
-    margin-bottom: 15px;
+    margin-top:10px;
+    margin-bottom: 10px;
     font-size: 21px;
 }
 p
